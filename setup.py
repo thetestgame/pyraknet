@@ -1,18 +1,22 @@
-import os.path
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
-from setuptools import setup
-
-root_path = os.path.abspath(os.path.join(__file__, ".."))
+long_description = '''
+Python implementation of RakNet 3.25. This is not aimed to be a complete port of RakNet,
+just everything that's needed to run a server.
+'''
 
 setup(
-	name="pyraknet",
-	version="0.1dev",
-	description="Minimal Python implementation of RakNet 3.25.",
-	long_description=open(os.path.join(root_path, "README.md")).read(),
-	author="lcdr",
-	url="https://bitbucket.org/lcdr/pyraknet/",
-	license="GPL v3",
-	packages=["pyraknet"],
-	package_dir={"pyraknet": root_path},
-	python_requires=">=3.6"
-)
+    name="PyRakNet",
+    version="1.0.0",
+    description="Minimal Python implementation of RakNet 3.25.",
+    long_description=long_description,
+    author="Jordan Maxwell",
+    url="https://github.com/StellarGaming/pyraknet",
+    license="GPL v3",
+    packages=["pyraknet"],
+    classifiers=[
+        'Programming Language :: Python :: 3'
+    ])
