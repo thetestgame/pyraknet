@@ -22,12 +22,5 @@ This repository is based on a fork of LCDR's repository available <a href="https
 #### Requirements:
 * Python 3.6
 
-### Sample server setup
-Run python -m pyraknet or execute \_\_main\_\_.py to start a sample server that will send packets manually, from ./packets/
-
-To send something, place your packets in ./packets/<your subfolder> and enter the subfolder name in the command line.
-
-The server logs incoming and outgoing packets in ./logs/, if you get errors you might have to create the directory (and possibly subdirectories).
-
 ## License:
 PyRakNet is availabe under the  GPL v3 license. A copy of this license is available  in the ``LICENSE`` file found in this repository
